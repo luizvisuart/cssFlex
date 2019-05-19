@@ -70,3 +70,30 @@ body {
     background-color: #ccc;
     color: #fff;
 }
+
+@media (max-width: 768px){
+    .block {
+        width: calc(100% / 2 - 20px);
+    }
+    .block-img {
+        height: calc((100vw / 2 - 20px) / 2 );
+    }
+}
+
+@media (max-width: 425px){
+    .block {
+        width: calc(100%  - 20px);
+    }
+    .block-img {
+        height: calc((100vw - 20px) / 2 );
+    }
+}
+@media (max-width: 320px){
+    .block {
+        width: calc(100%);
+        margin: 10px 0;
+    }
+    .block-img {
+        height: calc(100vw  / 2 );
+    }
+}
